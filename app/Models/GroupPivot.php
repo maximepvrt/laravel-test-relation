@@ -30,7 +30,7 @@ class GroupPivot extends Pivot
         parent::boot();
 
         static::saving(function ($pivot) {
-            error_log('saving');
+            error_log('saving event fire');
         });
     }
 }
